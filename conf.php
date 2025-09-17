@@ -1,7 +1,7 @@
 <?php
 //site configuration
 $conf['site_name']="BBIT";
-$conf['admin_email']="info@bbit";
+$conf['site_email']="info@bbit";
 $conf['site_url']="http://localhost/Tatii";
 
 //site language
