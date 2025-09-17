@@ -15,7 +15,7 @@ spl_autoload_register(function($className) use ($directory){
 });
 
 //create various instances to testautoload
-$myClassInstance=new myClass();
+$ClassInstance=new myClass();
 $formsInstance=new forms();
 $layoutsinstance=new layouts();
 

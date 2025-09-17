@@ -16,7 +16,7 @@ public function signup(){
     </form>
     <?php
 }
-public funtion login(){
+public function login(){
     ?>
     <h2>Login Form</h2>
     <form action='submit_login.php' method='post'>
@@ -25,10 +25,8 @@ public funtion login(){
         <label for='password'>password_verify:</label>
         <input type='password' id='password' name='password' required><br><br>
 
-        <?php $this->submit_button('login'); ?> 
-        <a href='signup.php'>don't have an account?signup</a>
+        <?php $this->submit_button('login'); ?>  <a href='index.php'>don't have an account?signup</a>
     </form>
     <?php
 }
-    }
 }
