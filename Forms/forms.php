@@ -12,11 +12,11 @@ public function signup(){
         <input type='password' id='password' name='password' required><br><br>
 
         <?php $this->submit_button('sign up'); ?> 
-        <a href='loginn.php'>already have an account?login</a>
+        <a href='login.php'>already have an account?login</a>
     </form>
     <?php
 }
-public funtion login(){
+public function login(){
     ?>
     <h2>Login Form</h2>
     <form action='submit_login.php' method='post'>
@@ -30,5 +30,9 @@ public funtion login(){
     </form>
     <?php
 }
+    public function submit_button($text){
+        echo "<input type='submit' value='{$text}'>";
     }
 }
+
+

@@ -1,22 +1,15 @@
 <?php
-$directory=[
+$directories = [
  'layouts',
- 'forms'
-   
+ 'Forms'
 ];
-spl_autoload_register(function($className) use ($directory){
-    foreach($directory as $dir){
-        $filePath=$dir.'/'.$className.'.php';
+spl_autoload_register(function($className) use ($directories){
+    foreach($directories as $dir){
+        $filePath = $dir . '/' . $className . '.php';
         if(file_exists($filePath)){
             require_once $filePath;
             return;
         }
     }
 });
-
-//create various instances to testautoload
-$ClassInstance=new myClass();
-$formsInstance=new forms();
-$layoutsinstance=new layouts();
-
 

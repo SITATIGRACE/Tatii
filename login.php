@@ -1,32 +1,11 @@
 <?php
-class forms{
+require_once 'conf.php';
+require_once 'classAutoLoad.php';
 
-public function signup(){
-    ?>
-    <form action='submit_signup.php' method='post'>
-        <label for='username'>Username:</label>
-        <input type='text' id='username' name='username' required><br><br>
-        <label for='email'>email:</label>
-        <input type='email' id='email' name='email' required><br><br>
-        <label for='password'>password_verify:</label>
-        <input type='password' id='password' name='password' required><br><br>
+$layoutsinstance = new layouts();
+$formInstance = new forms();
 
-        <?php $this->submit_button('sign up'); ?> 
-        <a href='loginn.php'>already have an account?login</a>
-    </form>
-    <?php
-}
-public function login(){
-    ?>
-    <h2>Login Form</h2>
-    <form action='submit_login.php' method='post'>
-        <label for='username'>Username:</label>
-        <input type='text' id='username' name='username' required><br><br>
-        <label for='password'>password_verify:</label>
-        <input type='password' id='password' name='password' required><br><br>
-
-        <?php $this->submit_button('login'); ?>  <a href='index.php'>don't have an account?signup</a>
-    </form>
-    <?php
-}
-}
+$layoutsinstance->heading($conf);
+$layoutsinstance->welcome($conf);
+$formInstance->login();
+$layoutsinstance->footer($conf);
