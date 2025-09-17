@@ -1,5 +1,5 @@
 <?php
-class myClass{
+class layouts{
     public function heading(){
         echo "welcome to bbit"; 
     }
@@ -7,6 +7,6 @@ class myClass{
         print "<p> this is a new semester</p>";
     }
     public function footer(){
-        echo "contact us at <a href='www.bbit.in'>www.bbit.in</a>";
+        echo "contact us at <a href='info@bbit.in'>info@bbit.in</a>";
     }
 }

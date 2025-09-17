@@ -1,6 +1,6 @@
 <?php
-class user_forms{
-    public function signup_form(){
+class forms{
+    public function signup(){
      ?>
      <h2>signup form</h2>
     <form action='submit_signup.php' method='post'>
